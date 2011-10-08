@@ -205,7 +205,7 @@ void MainWindow::readyqa(QNetworkReply* resulti){
             habraqa[key]["url"]=rx.cap(1);
             if(this->isHidden() || ui->tabWidget->currentIndex()!=2){
                 habraqa_new++;
-                ui->tabWidget->setTabText(1,QString::fromUtf8("QA (%1)").arg(habraqa_new));
+                ui->tabWidget->setTabText(2,QString::fromUtf8("QA (%1)").arg(habraqa_new));
                 if(this->isHidden()){
                     trIcon->setIcon(QIcon(":/img/icon2.png"));
                 }
